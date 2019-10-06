@@ -12,14 +12,15 @@
 <p>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-This thingy was made by Techno, (Oh-My-God Particles), with a ton of help from Rekken!!! thank you so much for that!!!!<br>(I hope the calculator worked and that it helped you!!!)
+This military calculator was made by Techno!!#8758 and Riski#9704. Contact either of them if something goes haywire.
+This military calculator was ported to the public domain (and slightly edited) by im_a_waffle1#8686.
 </p>
 </footer>
 </center>
 
 <script>
 function Calculation() {
-	var PopulationSize = Number(prompt("Please enter millitary size!! (note, you can use scientific notation! :D (must be in the form of XeY (where X is the base and Y the exponent of 10!!)))"));
+	var PopulationSize = Number(prompt("ENTER NATIONSTATES POPULATION. (please enter it in a full number (i.e. 69,000,000)) (also can be used in scientific notation (must be in the form of XeY (where X is the base and Y the exponent of 10)))"));
 	if (PopulationSize <= 5e6) {
 		var MilltarySize = PopulationSize * 0.62 * 0.12
 	}
@@ -32,12 +33,12 @@ function Calculation() {
 	else if (PopulationSize >= 3e9) {
 		var MilltarySize = PopulationSize * 0.62 * 0.12 * 0.25
 	}
-	else MilltarySize = "not a number.. sorry!! something went wrong.. If you entered a valid number, please tell techno what happened!! they'll fix it"
+	else MilltarySize = "This number is incorrect."
 	return MilltarySize
 }
 
 function Display() {
-	document.getElementById("Size").innerHTML = "Your millitary size is " + Calculation() + "!!!";
+	document.getElementById("Size").innerHTML = "Your millitary size is " + Calculation() + "!";
 }
 Display()
 </script>
