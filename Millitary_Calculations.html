@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+
+<button onclick="Display()"><br><br>Oh! if you entered the wrong thing.. click here!! :D<br><br><br></button>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<p id="Size" style="font-size:300%;"></p>
+
+<footer>
+<p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+This thingy was made by Techno, (Oh-My-God Particles), with a ton of help from Rekken!!! thank you so much for that!!!!<br>(I hope the calculator worked and that it helped you!!!)
+</p>
+</footer>
+</center>
+
+<script>
+function Calculation() {
+	var PopulationSize = Number(prompt("Please enter millitary size!! (note, you can use scientific notation! :D (must be in the form of XeY (where X is the base and Y the exponent of 10!!)))"));
+	if (PopulationSize <= 5e6) {
+		var MilltarySize = PopulationSize * 0.62 * 0.12
+	}
+	else if (PopulationSize >= 5e6 && PopulationSize <= 999e6) {
+		var MilltarySize = PopulationSize * 0.62 * 0.12 * 0.40
+	}
+	else if (PopulationSize >= 1e9 && PopulationSize <= 2.99e9) {
+		var MilltarySize = PopulationSize * 0.62 * 0.12 * 0.33
+	}
+	else if (PopulationSize >= 3e9) {
+		var MilltarySize = PopulationSize * 0.62 * 0.12 * 0.25
+	}
+	else MilltarySize = "not a number.. sorry!! something went wrong.. If you entered a valid number, please tell techno what happened!! they'll fix it"
+	return MilltarySize
+}
+
+function Display() {
+	document.getElementById("Size").innerHTML = "Your millitary size is " + Calculation() + "!!!";
+}
+Display()
+</script>
+
+
+</body>
+</html>
