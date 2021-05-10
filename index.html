@@ -1,49 +1,14 @@
-<!DOCTYPE html>
 <html>
-<body>
-<center>
+    <!-- taking a look at the source code I see mr. hackerman 
+    or maybe you're looking at this on github, lol
+    oh well ill just pretend you're looking at this through inspect -->
+    <head>
+        <title>The Hole to Hide In Military Calculator</title>
+    </head>
+    <p id="display" style="font-size: 300%; text-align: center;  position: fixed; top: 50%; left: 50%; margin-top: -130px; margin-left: -350px;">If this displays after you have entered in your population, something is wrong! Notify im_a_waffle1#9951 on discord or telegram Doge Land if there are any issues. Thanks!</p>
 
-<button onclick="Display()"><br><br>Oh! if you entered the wrong thing.. click here!! :D<br><br><br></button>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer style="text-align: center; left: 0; bottom: 0; padding-bottom: 10px; width: 100%; position: fixed;"><hr>
+    made with ❤ by im_a_waffle1/Doge Land | <a href="https://github.com/awaffle1/ththi-militarycalc">source code</a></footer>
 
-<p id="Size" style="font-size:300%;"></p>
-
-<footer>
-<p>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-This military calculator was made by Techno!!#8758 and Riski#9704. Contact either of them if something goes haywire.
-This military calculator was ported to the public domain (and slightly edited) by im_a_waffle1#8686.
-This military calculator may be off from other calculators. Choose wisely.
-</p>
-</footer>
-</center>
-
-<script>
-function Calculation() {
-	var PopulationSize = Number(prompt("ENTER NATIONSTATES POPULATION. (please enter it in a full number (i.e. 69000000)) (also can be used in scientific notation (must be in the form of XeY (where X is the base and Y the exponent of 10)))"));
-	if (PopulationSize <= 5e6) {
-		var MilltarySize = PopulationSize * 0.62 * 0.12
-	}
-	else if (PopulationSize >= 5e6 && PopulationSize <= 999e6) {
-		var MilltarySize = PopulationSize * 0.62 * 0.12 * 0.40
-	}
-	else if (PopulationSize >= 1e9 && PopulationSize <= 2.99e9) {
-		var MilltarySize = PopulationSize * 0.62 * 0.12 * 0.33
-	}
-	else if (PopulationSize >= 3e9) {
-		var MilltarySize = PopulationSize * 0.62 * 0.12 * 0.25
-	}
-	else MilltarySize = "This number is incorrect."
-	return MilltarySize
-}
-
-function Display() {
-	document.getElementById("Size").innerHTML = "Your millitary size is " + Calculation() + "!";
-}
-Display()
-</script>
-
-
-</body>
+    <script src="main.js"></script>
 </html>
