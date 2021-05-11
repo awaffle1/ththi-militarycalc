@@ -1,10 +1,10 @@
 function calcMilitary(population) {
     var populationCalc = population * 0.62 * 0.12;
-    if (populationCalc <= 999000000) {
+    if (populationCalc <= 999e6) {
         var militarySize = populationCalc * 0.40;
-    } else if (populationCalc <= 2999000) {
+    } else if (populationCalc <= 2.99e9) {
         var militarySize = populationCalc * 0.33;
-    } else if (populationCalc >= 3000000000) {
+    } else if (populationCalc >= 3e9) {
         var militarySize = populationCalc * 0.25;
     }
     return militarySize
